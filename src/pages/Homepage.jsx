@@ -1,7 +1,7 @@
 import Brands from "../components/Brands";
 import EcomusFav from "../components/EcomusFav";
 import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/header/Navbar";
 import PeopleFeed from "../components/PeopleFeed";
 import PremiumSupport from "../components/PremiumSupport";
 import ReadStorie from "../components/ReadStorie";
@@ -10,11 +10,11 @@ export default function Homepage() {
   return (
     <>
       <Navbar />
-      <EcomusFav/>
-      <ReadStorie/>
-      <PeopleFeed/>
-      <PremiumSupport/>
-      <Brands/>
+      <EcomusFav />
+      <ReadStorie />
+      <PeopleFeed />
+      <PremiumSupport />
+      <Brands />
       <Footer />
     </>
   );
