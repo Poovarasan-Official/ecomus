@@ -19,7 +19,6 @@ export default function Navbar() {
             >
               <span className="navbar-toggler-icon"></span>
             </button>
-
             {/* <!-- Navbar Collapse --> */}
             <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
@@ -44,7 +43,6 @@ export default function Navbar() {
                   </a>
                 </li>
               </ul>
-
               {/* <!-- Centered Logo --> */}
               <a className="navbar-brand " href="#">
                 <img
@@ -54,7 +52,6 @@ export default function Navbar() {
                   height="40"
                 />
               </a>
-
               {/* <!-- Right-aligned Search Bar --> */}
               <div className="d-flex ms-auto gap-3">
                 <i className="fa-solid fa-magnifying-glass"></i>
