@@ -1,0 +1,36 @@
+
+.carousel-item-custom {
+  background-size: cover;
+  background-position: center;
+  height: 500px; 
+}
+
+.carousel-caption h2 {
+  font-size: 2rem; 
+  color: black; 
+  font-weight: normal;
+  font-size: 80px;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  color: black;
+}
+
+.carousel-caption .btn {
+  background-color: #000; 
+  color: white;
+}
+button{
+  width: 200px;
+} 
+.carousel-control-prev, .carousel-control-next {
+  display: none !important;
+}
+
+ .carousel-indicators .active {
+  background-color: #000 !important;
+}
+
+
+
