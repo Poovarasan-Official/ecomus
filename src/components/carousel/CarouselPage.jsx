@@ -72,3 +72,4 @@ const CarouselPage = () => {
 };
 
 export default CarouselPage;
+

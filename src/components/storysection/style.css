@@ -1,0 +1,6 @@
+.story-section .rounded-circle {
+    width: 100px; /* Set your desired width */
+    height: 100px; /* Set your desired height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+  }
+  
