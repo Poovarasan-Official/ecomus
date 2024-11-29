@@ -9,13 +9,13 @@ import ReadStorie from "../components/ReadStorie";
 export default function Homepage() {
   return (
     <>
-      
+      <Navbar />
       <EcomusFav/>
       <ReadStorie/>
       <PeopleFeed/>
       <PremiumSupport/>
       <Brands/>
-      
+      <Footer />
     </>
   );
 }
