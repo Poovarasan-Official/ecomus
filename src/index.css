@@ -1,8 +1,11 @@
 body {
   margin: 0;
-<<<<<<< HEAD
   min-height: 100vh;
   font-family:"Albert sans",sans-serif ;
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
 }
 
@@ -23,10 +26,16 @@ body {
   width: 1240px;
   height: 663.09px;
   padding: 0px 50px;
-  display: flex;
+  display: flex ;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.ecomus-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .cards-maincontainer{
   width: 1170px;
@@ -216,19 +225,16 @@ transition: transform .9s;
 
 .peoplefeedimage2:hover{  
   transform: scale(1.1);
-=======
   padding: 0;
   height: 100vh;
 }
 a {
   color: inherit !important; /* Inherits the color from the parent element */
   text-decoration: none !important; /* Removes underline */
->>>>>>> 0ef002b5c4b6765aa6760fa8237c820a089e3c14
 }
 
 
 
-<<<<<<< HEAD
 /* ----------------Premium support------------- */
 
 .premium-container{
@@ -286,7 +292,5 @@ font-size: 18px;
     height: 74.85px;
     
     }
-=======
 
->>>>>>> 0ef002b5c4b6765aa6760fa8237c820a089e3c14
 
