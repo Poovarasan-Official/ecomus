@@ -6,23 +6,30 @@ const Categories = () => {
   const [rightArrow, setRightArrow] = useState(true);
   const [leftArrow, setLeftArrow] = useState(false);
 
+  const smoothScroll = (element, distance, duration) => {
+    let start = element.scrollLeft;
+    let startTime = performance.now();
+    const scroll = (time) => {
+      const timeElapsed = time - startTime;
+      const scrollAmount = Math.min(timeElapsed / duration, 1) * distance;
+      element.scrollLeft = start + scrollAmount;
+      if (timeElapsed < duration) {
+        requestAnimationFrame(scroll);
+      }
+    };
+
+    requestAnimationFrame(scroll);
+  };
   const handleRight = () => {
     if (galleryRef.current) {
-      galleryRef.current.scrollBy({
-        left: 400,
-        behavior: "smooth",
-      });
-
+      smoothScroll(galleryRef.current, 400, 1000);
       setRightArrow(false);
       setLeftArrow(true);
     }
   };
   const handleLeft = () => {
     if (galleryRef.current) {
-      galleryRef.current.scrollBy({
-        left: -400,
-        behavior: "smooth",
-      });
+      smoothScroll(galleryRef.current, -400, 1000);
       setRightArrow(true);
       setLeftArrow(false);
     }
@@ -39,8 +46,8 @@ const Categories = () => {
         style={{ overflow: "hidden", overflowX: "hidden", overflowY: "hidden" }}
       >
         <div className="row " style={{ flexWrap: "nowrap", gap: "10px" }}>
-          <div className="col-md-auto">
-            <div className="card item">
+          <div className="col-md-auto ">
+            <div className="card item text-center">
               <div className="image-container position-relative">
                 <img
                   src="https://themesflat.co/html/ecomus/images/collections/collection-42.jpg"
@@ -55,7 +62,7 @@ const Categories = () => {
                 Tops{" "}
                 <i
                   className="fa-solid fa-arrow-right ms-1"
-                  style={{ color: "#ffffff", fontSize: "20px" }}
+                  style={{ color: "#ffffff", fontSize: "10px" }}
                 ></i>
               </button>
             </div>
@@ -93,7 +100,7 @@ const Categories = () => {
                 Sweatshirts{" "}
                 <i
                   className="fa-solid fa-arrow-right ms-1"
-                  style={{ color: "#ffffff", fontSize: "20px" }}
+                  style={{ color: "#ffffff", fontSize: "10px" }}
                 ></i>
               </button>
             </div>
@@ -115,7 +122,7 @@ const Categories = () => {
                 Swim{" "}
                 <i
                   className="fa-solid fa-arrow-right ms-1"
-                  style={{ color: "#ffffff", fontSize: "20px" }}
+                  style={{ color: "#ffffff", fontSize: "10px" }}
                 ></i>
               </button>
             </div>
@@ -153,7 +160,7 @@ const Categories = () => {
                 Dresses{" "}
                 <i
                   className="fa-solid fa-arrow-right ms-1"
-                  style={{ color: "#ffffff", fontSize: "20px" }}
+                  style={{ color: "#ffffff", fontSize: "10px" }}
                 ></i>
               </button>
             </div>
@@ -175,7 +182,7 @@ const Categories = () => {
                 Cardigans{" "}
                 <i
                   className="fa-solid fa-arrow-right ms-1"
-                  style={{ color: "#ffffff", fontSize: "20px" }}
+                  style={{ color: "#ffffff", fontSize: "10px" }}
                 ></i>
               </button>
             </div>
