@@ -1,12 +1,12 @@
-import Brands from "../components/Brands";
-import EcomusFav from "../components/EcomusFav";
+import Brands from "../components/brands/Brands";
 import Footer from "../components/Footer";
 import Navbar from "../components/header/Navbar";
-import PeopleFeed from "../components/PeopleFeed";
-import PremiumSupport from "../components/PremiumSupport";
-import ReadStorie from "../components/ReadStorie";
 import CarouselPage   from "../components/carousel/CarouselPage";
 import Categories from "../components/categories/Categories"
+import EcomusFav from "../components/ecomusfav/EcomusFav";
+import ReadStorie from "../components/readStorie/ReadStorie";
+import PeopleFeed from "../components/peopleFeed/PeopleFeed";
+import PremiumSupport from "../components/premiumSupport/PremiumSupport";
 
 export default function Homepage() {
   return (
