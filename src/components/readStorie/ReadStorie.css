@@ -1,0 +1,54 @@
+
+
+/* -----------------read story--------------------- */
+
+
+
+.readstory-container{
+    width: 1240px;
+    height: 697px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 79px 0px 91px;
+    
+    background-color: #f7f7f7;
+  }
+  
+  .readstory-content{
+    width: 1140px;
+  height: 527px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  
+  }
+  
+  .readstory-content img{
+    width: 555px;
+    height: 527.25px;
+    background-color: rgba(210, 13, 210, 0.467);
+  }
+  .text-content{
+    width: 542.98px;
+    height: 305.73px;
+    padding:20px 20px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
+  }
+  .text-content .header{
+    font-size: 50px;
+  }
+  .text-content button{
+  width: 140px;
+  height: auto;
+  padding: 7px;
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+  border: none;
+  font-size: 14px;
+  }

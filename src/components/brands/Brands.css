@@ -1,0 +1,19 @@
+  /* ------------------brands---------------- */
+  .brand-container{
+    width: 1240px;
+    height: 274.85;    
+    padding: 100px 0px;
+  }
+  .brand-subcontainer{
+    width: 100%;
+    height: 74.85px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .brandimgs{
+    width: 181.67px;
+    height: 74.85px;
+    
+    }
+
+

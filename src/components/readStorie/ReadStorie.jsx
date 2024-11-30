@@ -1,5 +1,6 @@
 import React from 'react'
-import ReadStory from '../components/Readstory-pics/collection-58.jpg'
+import ReadStory from '../readStorie/Readstory-pics/collection-58.jpg'
+import '../readStorie/ReadStorie.css'
 
 function ReadStorie() {
   return<>

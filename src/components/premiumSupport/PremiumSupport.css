@@ -1,0 +1,41 @@
+
+/* ----------------Premium support------------- */
+
+.premium-container{
+    width: 1240px;
+    height: 255.33px;
+    padding: 80px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .permium-subcontainer{
+    width: 1140px;
+    height: 175.33px;
+    display: flex;
+    justify-content: center;
+  align-items: center;
+    justify-content: space-between;
+  
+  }
+  .premium-cards{
+    width: 262px;
+    height: 175.33px;
+    padding: 26px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  align-items: center;
+  border: .01px solid rgb(228, 225, 225);
+  border-radius: 10px;
+  
+  }
+  .premium-cards .premium-header{
+  font-size: 18px;
+  
+  }
+  .premium-cards .premium-desr{
+    font-size: 14px;
+    
+    }
+  

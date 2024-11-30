@@ -1,0 +1,141 @@
+
+/* -------------------ecomus-favorites------------ */
+/* .ecomus-container{
+  width: 1240px;
+  height: 742.09px;
+  padding: 78px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ecomus-collections{
+  width: 1240px;
+  height: 663.09px;
+  padding: 0px 50px;
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ecomus-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cards-maincontainer{
+  width: 1170px;
+  height: 512.7px;
+  margin: 0px 0px -40px -30px;
+  padding: 0px 0px 40px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards-container{
+  width: 1140.33px;
+height: 472.7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:25px;
+}
+.cardscontainer1{
+width: 257.25px;
+height: 472.7px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.cardcontent{
+  width: 257.25px;
+  height: 105.2px;
+}
+
+.cards{
+  width: 262.5px;
+  height: 367.5px;
+  border-radius: 10px;
+}
+.cardpara1{
+  font-size: 16px;
+}
+.cardpara2{
+font-size: 14px;
+font-weight: 600;
+}
+.colorchange{
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+}
+.form-check-input{
+  background-color: rgb(255, 111, 0)  ;
+} */
+
+/* -------------------ecomus-favorites------------ */
+.ecomus-container {
+    width: 1240px;
+    padding: 78px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ecomus-collections {
+    width: 1240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .ecomus-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .cards-carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    width: 100%;
+    padding: 10px 0;
+  }
+  
+   .cards-carousel::-webkit-scrollbar {
+    display: none;
+  } 
+    
+  
+  .card {
+    flex: 0 0 calc(25% - 20px); 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    scroll-snap-align: start;
+  }
+  
+  .cards {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .cardcontent {
+    text-align: center;
+  }
+  
+  .cardpara1 {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .cardpara2 {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
