@@ -42,12 +42,12 @@ const Categories = () => {
       </h2>
       <div
         ref={galleryRef}
-        className="container gallary d-flex mt-5"
+        className="container gallary  mt-5"
         style={{ overflow: "hidden", overflowX: "hidden", overflowY: "hidden" }}
       >
         <div className="row " style={{ flexWrap: "nowrap", gap: "10px" }}>
           <div className="col-md-auto ">
-            <div className="card item text-center">
+            <div className="card item">
               <div className="image-container position-relative">
                 <img
                   src="https://themesflat.co/html/ecomus/images/collections/collection-42.jpg"
@@ -57,7 +57,7 @@ const Categories = () => {
               </div>
               <button
                 className="btn list rounded-pill fw-normal shadow p-2 mb-5 bg-body-tertiary rounded"
-                style={{ width: "100px", marginLeft: "100px" }}
+                style={{ width: "100px" }}
               >
                 Tops{" "}
                 <i
@@ -95,7 +95,6 @@ const Categories = () => {
               </div>
               <button
                 className="btn list rounded-pill fw-normal  shadow p-2 mb-5 bg-body-tertiary rounded w-50 "
-                style={{ marginLeft: "80px" }}
               >
                 Sweatshirts{" "}
                 <i
@@ -117,7 +116,7 @@ const Categories = () => {
               </div>
               <button
                 className="btn list rounded-pill fw-normal shadow p-2 mb-5 bg-body-tertiary rounded"
-                style={{ width: "100px", marginLeft: "100px" }}
+                style={{ width: "100px" }}
               >
                 Swim{" "}
                 <i
@@ -155,7 +154,7 @@ const Categories = () => {
               </div>
               <button
                 className="btn list rounded-pill fw-normal shadow p-2 mb-5 bg-body-tertiary rounded"
-                style={{ width: "100px", marginLeft: "100px" }}
+                style={{ width: "100px" }}
               >
                 Dresses{" "}
                 <i
@@ -177,7 +176,7 @@ const Categories = () => {
               </div>
               <button
                 className="btn list rounded-pill fw-normal shadow p-2 mb-5 bg-body-tertiary rounded"
-                style={{ width: "120px", marginLeft: "100px" }}
+                style={{ width: "120px" }}
               >
                 Cardigans{" "}
                 <i
