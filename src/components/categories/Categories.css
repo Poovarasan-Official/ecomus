@@ -72,9 +72,64 @@
   .angle{
     display: none !important;
   }
+  .gallary{
+     overflow: "hidden";
+     overflow-x: hidden;
+     overflow-Y: "hidden"
+  }
   .gallary:hover{
     .angle{
       display:flex !important;
     }
+  }
+  @media (max-width: 1024px) {
+    .gallary{
+      overflow-x: scroll;
+    }
+    .collection{
+      margin-bottom: 100px !important;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .gallary{
+      overflow-x: scroll;
+    }
+  }
+  @media (max-width: 567px) {
+    .gallary{
+      overflow-x: scroll;
+    }
+  }
+  @media (max-width: 567px){
+    .pick{
+      margin-left: 600px !important;
+    }
+    .text-overlay{
+      font-size: 45px;
+    }
+    .text-overlay .collection{
+      width: 200px;
+      padding: 30px;
+      font-size: xx-large;
+    }
+  }
+  @media (max-width:567px) {
+    .gallary{
+      overflow-x: scroll;
+      
+    }
+     .like{
+       width: 300px !important;
+    }
+    .image-container{
+      height: 700px;
+      background-size: cover;
+      overflow: hidden;
+    }
+    .list{
+      margin-top: 250px;
+    }
+    
   }
   

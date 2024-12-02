@@ -5,7 +5,10 @@ import "../carousel/carousel.css";
 const CarouselPage = () => {
   return (
     <>
-      <Carousel>
+    <div className="container">
+      
+    </div>
+       <Carousel>
         <Carousel.Item
           style={{
             backgroundImage:
@@ -65,11 +68,9 @@ const CarouselPage = () => {
             </button>
           </div>
         </Carousel.Item>
-      </Carousel>
-      
+      </Carousel> 
     </>
   );
 };
 
 export default CarouselPage;
-
