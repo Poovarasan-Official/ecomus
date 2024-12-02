@@ -116,7 +116,7 @@
   }
   @media (max-width:567px) {
     .gallary{
-      overflow-x: scroll;
+      overflow-x: scroll !important;
       
     }
      .like{
@@ -129,7 +129,6 @@
     }
     .list{
       margin-top: 250px;
-    }
-    
+    }   
   }
   
