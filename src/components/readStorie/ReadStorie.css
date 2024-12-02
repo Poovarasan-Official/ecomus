@@ -1,54 +1,90 @@
-
-
 /* -----------------read story--------------------- */
 
+.readstory-container {
+  width: 1240px;
+  height: 697px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 79px 0px 91px;
 
+  background-color: #f7f7f7;
+}
 
-.readstory-container{
-    width: 1240px;
-    height: 697px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 79px 0px 91px;
-    
-    background-color: #f7f7f7;
-  }
-  
-  .readstory-content{
-    width: 1140px;
+.readstory-content {
+  width: 1140px;
   height: 527px;
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
-  
-  }
-  
-  .readstory-content img{
-    width: 555px;
-    height: 527.25px;
-    background-color: rgba(210, 13, 210, 0.467);
-  }
-  .text-content{
-    width: 542.98px;
-    height: 305.73px;
-    padding:20px 20px 20px 0px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  
-  }
-  .text-content .header{
-    font-size: 50px;
-  }
-  .text-content button{
-  width: 140px;
-  height: auto;
-  padding: 7px;
+}
+
+.readstory-content img {
+  width: 555px;
+  height: 527.25px;
+  background-color: rgba(210, 13, 210, 0.467);
+}
+.text-content {
+  width: 542.98px;
+  height: 305.73px;
+  padding: 20px 20px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.text-content .header {
+  font-size: 52px;
+}
+.text-content .readstory-button {
+  width: 154.39px;
+  height: 43.33px;
+  padding: 20px 4px;
   background-color: black;
-  color: white;
+  color: #ffffff;
   border-radius: 25px;
   border: none;
   font-size: 14px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------media query----------------- */
+
+@media screen and (max-width: 1240px) {
+  .readstory-container {
+    margin-left: 600px;
   }
+}
+
+@media screen and (max-width: 800px) {
+  .readstory-container {
+    margin-left: 800px;
+  }
+  .readstory-content {
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 200px;
+  }
+  
+  .text-content .header {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .readstory-container {
+    margin-left: 800px;
+  }
+  .readstory-content {
+    flex-direction: column;
+  gap: 40px;
+    margin-bottom: 100px;
+  }
+
+  .text-content .header {
+    font-size: 22px;
+  }
+}

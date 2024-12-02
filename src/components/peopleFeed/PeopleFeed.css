@@ -84,9 +84,38 @@
     padding: 0;
     height: 100vh;
   }
-  a {
-    color: inherit !important; /* Inherits the color from the parent element */
-    text-decoration: none !important; /* Removes underline */
+  
+  
+
+  /* -----------media query------------- */
+
+  @media screen and (max-width:1240px){
+    .peoplefeed-container{
+      margin-left: 600px;
+      margin-top: 200px;
+      margin-bottom: 300px;
+    }
+
+
+  @media screen and (max-width:800px){
+    .peoplefeed-container{
+      margin-left: 800px;
+      margin-top: 200px;
+      margin-bottom: 300px;
+    }
+    .peoplefeed-subcontainer{
+      flex-direction: column;    
+      gap: 80px;    
+    }
   }
-  
-  
+
+  @media screen and (max-width:480px){
+    .peoplefeed-container{
+      margin-left: 850px;
+      margin-bottom: 400px;
+    }
+    .peoplefeed-subcontainer{
+      flex-direction: column;    
+      gap: 80px;    
+    }
+  }
