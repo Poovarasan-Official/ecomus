@@ -1,8 +1,8 @@
 import Brands from "../components/brands/Brands";
 import Footer from "../components/Footer";
 import Navbar from "../components/header/Navbar";
-import CarouselPage   from "../components/carousel/CarouselPage";
-import Categories from "../components/categories/Categories"
+import CarouselPage from "../components/carousel/CarouselPage";
+import Categories from "../components/categories/Categories";
 import EcomusFav from "../components/ecomusfav/EcomusFav";
 import ReadStorie from "../components/readStorie/ReadStorie";
 import PeopleFeed from "../components/peopleFeed/PeopleFeed";
@@ -14,11 +14,11 @@ export default function Homepage() {
       <Navbar />
       <CarouselPage />
       <Categories />
-      <EcomusFav/>
-      <ReadStorie/>
-      <PeopleFeed/>
-      <PremiumSupport/>
-      <Brands/>
+      <EcomusFav />
+      <ReadStorie />
+      <PeopleFeed />
+      <PremiumSupport />
+      <Brands />
       <Footer />
     </>
   );

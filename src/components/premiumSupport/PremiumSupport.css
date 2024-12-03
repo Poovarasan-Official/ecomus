@@ -30,7 +30,7 @@
   border-radius: 10px;
   
   }
-  .premium-cards .premium-header{
+  .premium-cards .premium-header2{
   font-size: 18px;
   
   }
@@ -74,21 +74,25 @@
     
     @media screen and (max-width: 480px) {
       .premium-container {
-        padding: 40px 10px 0px;
+        padding: 80px 10px 0px;
         margin-left: 800px;
+        margin-bottom: 500px;
       }
-    
+      
+      .permium-subcontainer {
+        gap: 150px;
+      }
+    .premium-cards .premium-header2{
+      font-size: 50px;
+    }
+    .premium-des{
+      font-size: 50px;
+    }
       .premium-cards {
         width: 100%;
         padding: 20px 15px;
       }
     
-      .premium-cards .premium-header {
-        font-size: 16px;
-      }
-    
-      .premium-cards .premium-desr {
-        font-size: 12px;
-      }
+      
     }
     

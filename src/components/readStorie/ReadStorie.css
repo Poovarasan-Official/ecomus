@@ -33,10 +33,10 @@
   flex-direction: column;
   gap: 20px;
 }
-.text-content .header {
+.text-content .header1 {
   font-size: 52px;
 }
-.text-content .readstory-button {
+.text-content .readstory-button1 {
   width: 154.39px;
   height: 43.33px;
   padding: 20px 4px;
@@ -68,9 +68,14 @@
     gap: 40px;
     margin-bottom: 200px;
   }
-  
-  .text-content .header {
+  .text-content{
+    font-size: 30px;
+  }
+  .header1{
     font-size: 32px;
+  }
+  .readstory-button1{
+    font-size: 10px;
   }
 }
 
@@ -81,10 +86,16 @@
   .readstory-content {
     flex-direction: column;
   gap: 40px;
-    margin-bottom: 100px;
+    margin-bottom: 400px;
   }
 
-  .text-content .header {
-    font-size: 22px;
+  .text-content{
+    font-size: 30px;
+  }
+  .header1{
+    font-size: 32px;
+  }
+  .readstory-button1{
+    font-size: 10px;
   }
 }

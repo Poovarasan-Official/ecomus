@@ -21,7 +21,7 @@ function PeopleFeed() {
     <i className="fa-solid fa-star" style={{color: '#ff7b54',}}></i>
 
     </div>
-<p className='peopletalk-header'>PEOPLE ARE TALKING</p>
+<p className='peopletalk-header3'>PEOPLE ARE TALKING</p>
 
 <p className='peopletalk-des'>
 "The shipping is always fast and the customer service team is friendly and helpful. I highly recommend this site to anyone looking for affordable clothing."

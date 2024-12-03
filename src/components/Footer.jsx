@@ -1,12 +1,10 @@
-
 const Footer = () => {
   return (
     <div className="container-fluid">
     <footer className="p-4">
-      <div className="row">
-        {/* <!-- Brand Logo --> */}
-        <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          {/* <h5 className="mb-3">Brand</h5> */}
+      <div className="row d-flex flex-column flex-md-row">
+        {/* <!-- Brand Logo Section --> */}
+        <div className="col mb-4">
           <a href="#">
             <img
               src="https://themesflat.co/html/ecomus/images/logo/logo.svg"
@@ -22,7 +20,7 @@ const Footer = () => {
             Email: info@fashionshop.com
             <br /> Phone: (212) 555-1234
           </p>
-          <div className="gap mt-3 d-flex align-items-center">
+          <div className="gap mt-3 d-flex justify-content-center justify-content-md-start">
             <a href="#" className="text-decoration-none me-3">
               <i className="fa-brands fa-facebook fa-2x"></i>
             </a>
@@ -40,79 +38,71 @@ const Footer = () => {
             </a>
           </div>
         </div>
-
+  
         {/* <!-- Help Section --> */}
-        <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <h5 className="mb-3">Help</h5>
-          <ul className="list-unstyled ">
+        <div className="col mb-4">
+          <h5 className="mb-3 text-center text-md-start">Help</h5>
+          <ul className="list-unstyled text-center text-md-start">
             <li className="mb-2">
-              <a href="#">Privacy Policy</a>
+              <a href="#" className="text-decoration-none">Privacy Policy</a>
             </li>
             <li className="mb-2">
-              <a href="#">Returns + Exchanges</a>
+              <a href="#" className="text-decoration-none">Returns + Exchanges</a>
             </li>
             <li className="mb-2">
-              <a href="#">Shipping</a>
+              <a href="#" className="text-decoration-none">Shipping</a>
             </li>
             <li className="mb-2">
-              <a href="#">Terms & Conditions</a>
+              <a href="#" className="text-decoration-none">Terms & Conditions</a>
             </li>
             <li className="mb-2">
-              <a href="#">FAQ’s</a>
+              <a href="#" className="text-decoration-none">FAQ’s</a>
             </li>
             <li className="mb-2">
-              <a href="#">Compare</a>
+              <a href="#" className="text-decoration-none">Compare</a>
             </li>
             <li className="mb-2">
-              <a href="#">My Wishlist</a>
+              <a href="#" className="text-decoration-none">My Wishlist</a>
             </li>
           </ul>
         </div>
-
+  
         {/* <!-- About Us Section --> */}
-        <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <h5 className="mb-3">About Us</h5>
-          <ul className="list-unstyled">
+        <div className="col mb-4">
+          <h5 className="mb-3 text-center text-md-start">About Us</h5>
+          <ul className="list-unstyled text-center text-md-start">
             <li className="mb-2">
-              <a href="#" className=" text-decoration-none">
-                Our Story
-              </a>
+              <a href="#" className="text-decoration-none">Our Story</a>
             </li>
             <li className="mb-2">
-              <a href="#" className=" text-decoration-none">
-                Visit Our Store
-              </a>
+              <a href="#" className="text-decoration-none">Visit Our Store</a>
             </li>
             <li className="mb-2">
-              <a href="#" className=" text-decoration-none">
-                Contact Us
-              </a>
+              <a href="#" className="text-decoration-none">Contact Us</a>
             </li>
             <li className="mb-2">
-              <a href="#" className=" text-decoration-none">
-                Account
-              </a>
+              <a href="#" className="text-decoration-none">Account</a>
             </li>
           </ul>
         </div>
-
-        {/* <!-- Sign Up for Email --> */}
-        <div className="col-lg-3 col-md-6">
-          <h5 className="mb-3">Sign Up for Email</h5>
-          <p>
-            Sign up to get first dibs on new arrivals, sales, exclusive
-            content, events and more!
+  
+        {/* <!-- Sign-Up Section --> */}
+        <div className="col mb-4">
+          <h5 className="mb-3 text-center text-md-start">Sign Up for Email</h5>
+          <p className="text-center text-md-start">
+            Sign up to get first dibs on new arrivals, sales, exclusive content,
+            events and more!
           </p>
           <form>
-            <div className="d-flex mb-3">
+            <div className="d-flex flex-column flex-md-row gap-2">
               <input
                 type="email"
-                className="form-control gap-1"
+                className="form-control mb-2 mb-md-0"
                 placeholder="Enter your email"
               />
               <button
                 type="submit"
-                className="btn btn-dark w-100 d-flex align-items-center justify-content-center"
+                className="btn btn-dark d-flex align-items-center justify-content-center"
               >
                 Subscribe
                 <i className="fa-solid fa-arrow-up-right-from-square ms-2"></i>
@@ -121,14 +111,11 @@ const Footer = () => {
           </form>
         </div>
       </div>
-      <div className="d-flex justify-content-between align-items-center">
-        {/* <!-- Left side: Copyright Text --> */}
-        <div className="left">
-          <p className="mb-0">© 2024 Ecomus Store. All Rights Reserved</p>
-        </div>
-
-        {/* <!-- Right side: Payment Icons --> */}
-        <div className="right">
+  
+      {/* <!-- Footer Bottom Section --> */}
+      <div className="d-flex flex-column flex-md-row justify-content-between align-items-center mt-4">
+        <p className="mb-2 mb-md-0 text-center">© 2024 Ecomus Store. All Rights Reserved</p>
+        <div className="d-flex justify-content-center">
           <i className="fab fa-cc-visa fa-2x me-3"></i>
           <i className="fab fa-cc-mastercard fa-2x me-3"></i>
           <i className="fab fa-cc-paypal fa-2x"></i>
@@ -136,7 +123,9 @@ const Footer = () => {
       </div>
     </footer>
   </div>
-  )
-}
+  
+  
+  );
+};
 
-export default Footer
+export default Footer;
