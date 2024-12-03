@@ -4,9 +4,7 @@ import "../carousel/carousel.css";
 const CarouselPage = () => {
   return (
     <>
-    <div className="container">
-      
-    </div>
+      <div className="container">
        <Carousel>
         <Carousel.Item
           style={{
@@ -68,6 +66,7 @@ const CarouselPage = () => {
           </div>
         </Carousel.Item>
       </Carousel> 
+      </div>
     </>
   );
 };

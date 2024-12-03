@@ -88,13 +88,13 @@
   
 
   /* -----------media query------------- */
-
+/* 
   @media screen and (max-width:1240px){
     .peoplefeed-container{
       margin-left: 600px;
       margin-top: 200px;
       margin-bottom: 300px;
-    }
+    } */
 
 
   @media screen and (max-width:800px){

@@ -96,31 +96,16 @@
       overflow-x: scroll;
     }
   }
-  @media (max-width: 567px) {
-    .gallary{
-      overflow-x: scroll;
-    }
-  }
-  @media (max-width: 567px){
-    .pick{
-      margin-left: 600px !important;
-    }
-    .text-overlay{
-      font-size: 45px;
-    }
-    .text-overlay .collection{
-      width: 200px;
-      padding: 30px;
-      font-size: xx-large;
-    }
-  }
+ 
+ 
   @media (max-width:567px) {
-    .gallary{
-      overflow-x: scroll !important;
-      
+    .main-image{
+      flex-direction: column;
+      justify-content: center;
+      gap: 100px !important ;
     }
      .like{
-       width: 300px !important;
+       width: 700px !important;
     }
     .image-container{
       height: 700px;
@@ -128,7 +113,64 @@
       overflow: hidden;
     }
     .list{
-      margin-top: 250px;
+      margin-top: 1000px;
+      width: 300px !important;
+      height: 100px !important;
+      font-size: 50px !important;
     }   
+    
+    .pick{
+      margin-left: -400px !important;
+    }
+    .pick-container{
+      flex-direction: column !important;
+      gap: 600px;
+      margin-top: 60px !important;
+    }
+    .text-overlay{
+      font-size: 45px;
+      margin-top: 200px !important;
+
+    }
+    .text-overlay p{
+      font-size: 70px !important;
+      color: black;
+    }
+    .text-overlay .collection{
+      width: 200px;
+      padding: 30px;
+      font-size: xx-large;
+    }
+    .category-container{
+      margin-left: 1050px;
+      margin-top: 100px;
+      width: 1400px;
+      margin-bottom: 300px;
+    }
+    .category-container h2{
+      font-size: 70px !important;
+    }
+    
+    .image-container {
+      width: 500px;
+      background-size: cover;
+    }
+    .collection{
+      margin-bottom: 500px !important;
+      font-size: 50px !important;
+      width: 300px !important;
+    }
+    .item{
+      width: 1500px !important;
+      height: 1500px !important;
+    }
+    .dress{
+      width: 1200px !important;
+      height: 1500px !important;
+    }
+    .gallary{
+      margin-left: -50px !important;
+    }
+    
   }
   
