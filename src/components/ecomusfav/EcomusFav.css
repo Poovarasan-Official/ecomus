@@ -161,7 +161,7 @@ font-weight: 600;
 @media screen and (max-width: 600px) {
   .ecomus-container {
     width: 100%;
-    margin-left: 600px;
+    margin-left: 800px;
   }
   .ecomus-header{
     margin-top: 30px;
@@ -185,13 +185,13 @@ font-weight: 600;
 @media screen and (max-width: 480px) {
   .ecomus-container {
     width: 100%;
-    margin-left: 600px;
+    margin-left: 900px;
   justify-content: center;
   align-items: center;
   }
 .card{
   width: 600px;
-  margin-left: 600px;
+  
 }
 .ecomus-header{
   margin-top: 30px;
