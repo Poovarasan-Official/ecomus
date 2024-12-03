@@ -1,0 +1,121 @@
+/* --------------------peoplefeed-------------- */
+
+.peoplefeed-container{
+    width: 1240px;
+    height: 448.81px;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .peoplefeed-subcontainer{
+    width: 1140px;
+    height: 448.81px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  .peoplefeed-textcontent{
+    width: 624px;
+    height: 299.67px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .peoplefeed-textcontent img{
+    width: 37px;
+    height: 25px;
+  }
+  .peopletalk-header{
+    font-size: 12px;
+  }
+  .peopletalk-des{
+    font-size: 20px;
+  }
+  .peoplefeed-textcontent .ptag1{
+    font-size: 14px;
+  }
+  .rating-star{
+    display: flex;
+    gap:20px;
+  }
+  
+  .peoplefeed-textcontent .ptag1 span{
+    font-weight: 600;
+    color: black;
+  }
+  
+  .peoplefeed-imgcontent{
+    width: 456px;
+    height: 448.81px;
+    padding: 0px 0px 66px;
+    display: flex;
+    flex-direction: column;
+    margin-right: -20px;
+  }
+  .peoplefeedimage1{
+    width: 360.24px;
+    height: 382.81px;
+  justify-content:flex-end;
+  border-radius: 10px;
+  margin-left:96px ;
+  transition: transform .9s;
+  }
+  .peoplefeedimage2{
+    width: 241.68px;
+    height: 275.51px;
+    margin-top: -210px;
+    border-radius: 10px;
+    transition: transform .9s;
+    
+  
+  }
+  
+  .peoplefeedimage1:hover{
+    position:relative ;
+    transform: scale(1.1);
+  }
+  
+  .peoplefeedimage2:hover{  
+    transform: scale(1.1);
+    padding: 0;
+    height: 100vh;
+  }
+  
+  
+
+  /* -----------media query------------- */
+
+  @media screen and (max-width:1240px){
+    .peoplefeed-container{
+      margin-left: 600px;
+      margin-top: 200px;
+      margin-bottom: 300px;
+    }
+
+
+  @media screen and (max-width:800px){
+    .peoplefeed-container{
+      margin-left: 800px;
+      margin-top: 200px;
+      margin-bottom: 300px;
+    }
+    .peoplefeed-subcontainer{
+      flex-direction: column;    
+      gap: 80px;    
+    }
+  }
+
+  @media screen and (max-width:480px){
+    .peoplefeed-container{
+      margin-left: 850px;
+      margin-bottom: 400px;
+    }
+    .peoplefeed-subcontainer{
+      flex-direction: column;    
+      gap: 80px;    
+    }
+  }

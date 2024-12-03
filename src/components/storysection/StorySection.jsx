@@ -4,7 +4,7 @@ export default function StorySection() {
     <>
       <section className="story-section py-5">
         <div className="container">
-          <div className="row text-center">
+          <div className="row text-center overflow-auto flex-nowrap">
             {/* New Arrivals */}
             <div className="col  mb-4">
               <div className="position-relative">

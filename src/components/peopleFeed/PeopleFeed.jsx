@@ -1,7 +1,8 @@
 import React from 'react'
-import Quote from '../components/people-feed-img/quote.svg'
-import peoplefeedimage1 from '../components/people-feed-img/te3.jpg'
-import peoplefeedimage2 from '../components/people-feed-img/te4.jpg'
+import Quote from '../peopleFeed/people-feed-img/quote.svg'
+import peoplefeedimage1 from '../peopleFeed/people-feed-img/te3.jpg'
+import peoplefeedimage2 from '../peopleFeed/people-feed-img/te4.jpg'
+import '../peopleFeed/PeopleFeed.css'
 
 function PeopleFeed() {
   return<>

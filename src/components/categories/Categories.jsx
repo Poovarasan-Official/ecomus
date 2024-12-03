@@ -6,23 +6,30 @@ const Categories = () => {
   const [rightArrow, setRightArrow] = useState(true);
   const [leftArrow, setLeftArrow] = useState(false);
 
+  const smoothScroll = (element, distance, duration) => {
+    let start = element.scrollLeft;
+    let startTime = performance.now();
+    const scroll = (time) => {
+      const timeElapsed = time - startTime;
+      const scrollAmount = Math.min(timeElapsed / duration, 1) * distance;
+      element.scrollLeft = start + scrollAmount;
+      if (timeElapsed < duration) {
+        requestAnimationFrame(scroll);
+      }
+    };
+
+    requestAnimationFrame(scroll);
+  };
   const handleRight = () => {
     if (galleryRef.current) {
-      galleryRef.current.scrollBy({
-        left: 400,
-        behavior: "smooth",
-      });
-
+      smoothScroll(galleryRef.current, 400, 1000);
       setRightArrow(false);
       setLeftArrow(true);
     }
   };
   const handleLeft = () => {
     if (galleryRef.current) {
-      galleryRef.current.scrollBy({
-        left: -400,
-        behavior: "smooth",
-      });
+      smoothScroll(galleryRef.current, -400, 1000);
       setRightArrow(true);
       setLeftArrow(false);
     }
@@ -35,13 +42,12 @@ const Categories = () => {
       </h2>
       <div
         ref={galleryRef}
-        className="container gallary d-flex mt-5"
-        style={{ overflow: "hidden", overflowX: "hidden", overflowY: "hidden" }}
+        className="container gallary  mt-5"
       >
-        <div className="row " style={{ flexWrap: "nowrap", gap: "10px" }}>
-          <div className="col-md-auto">
+        <div className="row" style={{ flexWrap: "nowrap", gap: "10px" }}>
+          <div className="col-md-auto like">
             <div className="card item">
-              <div className="image-container position-relative">
+              <div className="image-container ">
                 <img
                   src="https://themesflat.co/html/ecomus/images/collections/collection-42.jpg"
                   alt="category1"
@@ -50,20 +56,20 @@ const Categories = () => {
               </div>
               <button
                 className="btn list rounded-pill fw-normal shadow p-2 mb-5 bg-body-tertiary rounded"
-                style={{ width: "100px", marginLeft: "100px" }}
+                style={{ width: "100px" }}
               >
                 Tops{" "}
                 <i
                   className="fa-solid fa-arrow-right ms-1"
-                  style={{ color: "#ffffff", fontSize: "20px" }}
+                  style={{ color: "#ffffff", fontSize: "10px" }}
                 ></i>
               </button>
             </div>
           </div>
 
-          <div className="col-md-auto">
-            <div className="card item">
-              <div className="image-container position-relative">
+          <div className="col-md-auto like">
+            <div className="card item ">
+              <div className="image-container ">
                 <img
                   src="https://themesflat.co/html/ecomus/images/collections/collection-43.jpg"
                   alt="category2"
@@ -88,20 +94,19 @@ const Categories = () => {
               </div>
               <button
                 className="btn list rounded-pill fw-normal  shadow p-2 mb-5 bg-body-tertiary rounded w-50 "
-                style={{ marginLeft: "80px" }}
               >
                 Sweatshirts{" "}
                 <i
                   className="fa-solid fa-arrow-right ms-1"
-                  style={{ color: "#ffffff", fontSize: "20px" }}
+                  style={{ color: "#ffffff", fontSize: "10px" }}
                 ></i>
               </button>
             </div>
           </div>
 
-          <div className="col-md-auto">
+          <div className="col-md-auto like">
             <div className="card item">
-              <div className="image-container position-relative">
+              <div className="image-container ">
                 <img
                   src="https://themesflat.co/html/ecomus/images/collections/collection-44.jpg"
                   alt="category3"
@@ -110,20 +115,20 @@ const Categories = () => {
               </div>
               <button
                 className="btn list rounded-pill fw-normal shadow p-2 mb-5 bg-body-tertiary rounded"
-                style={{ width: "100px", marginLeft: "100px" }}
+                style={{ width: "100px" }}
               >
                 Swim{" "}
                 <i
                   className="fa-solid fa-arrow-right ms-1"
-                  style={{ color: "#ffffff", fontSize: "20px" }}
+                  style={{ color: "#ffffff", fontSize: "10px" }}
                 ></i>
               </button>
             </div>
           </div>
 
-          <div className="col-md-auto">
+          <div className="col-md-auto like">
             <div className="card item">
-              <div className="image-container position-relative">
+              <div className="image-container ">
                 <img
                   src="https://themesflat.co/html/ecomus/images/collections/collection-45.jpg"
                   alt="category4"
@@ -148,20 +153,20 @@ const Categories = () => {
               </div>
               <button
                 className="btn list rounded-pill fw-normal shadow p-2 mb-5 bg-body-tertiary rounded"
-                style={{ width: "100px", marginLeft: "100px" }}
+                style={{ width: "100px" }}
               >
                 Dresses{" "}
                 <i
                   className="fa-solid fa-arrow-right ms-1"
-                  style={{ color: "#ffffff", fontSize: "20px" }}
+                  style={{ color: "#ffffff", fontSize: "10px" }}
                 ></i>
               </button>
             </div>
           </div>
 
-          <div className="col-md-auto">
+          <div className="col-md-auto like">
             <div className="card item">
-              <div className="image-container position-relative">
+              <div className="image-container">
                 <img
                   src="https://themesflat.co/html/ecomus/images/collections/collection-46.jpg"
                   alt="category5"
@@ -170,12 +175,12 @@ const Categories = () => {
               </div>
               <button
                 className="btn list rounded-pill fw-normal shadow p-2 mb-5 bg-body-tertiary rounded"
-                style={{ width: "120px", marginLeft: "100px" }}
+                style={{ width: "120px" }}
               >
                 Cardigans{" "}
                 <i
                   className="fa-solid fa-arrow-right ms-1"
-                  style={{ color: "#ffffff", fontSize: "20px" }}
+                  style={{ color: "#ffffff", fontSize: "10px" }}
                 ></i>
               </button>
             </div>
@@ -184,8 +189,8 @@ const Categories = () => {
       </div>
 
       <div className="container mt-5">
-        <div className="row row-cols-1 row-cols-md-2 g-5">
-          <div className="col">
+        <div className="row row-cols-1 row-cols-md-2 g-5 justify-content-center">
+          <div className="col-auto pick" >
             <div className="card">
               <img
                 src="https://themesflat.co/html/ecomus/images/collections/collection-47.jpg"
@@ -193,14 +198,14 @@ const Categories = () => {
                 alt="collecton 1"
               />
               <div className="text-overlay text-center">
-                <p className="d-flex">The Janury Collection</p>
+                <p>The Janury Collection</p>
                 <button className="btn collection rounded-pill fw-medium  shadow p-2  mt-3 bg-body-tertiary rounded ms-5">
                   Shop now
                 </button>
               </div>
             </div>
           </div>
-          <div className="col">
+          <div className="col-auto pick">
             <div className="card ">
               <img
                 src="https://themesflat.co/html/ecomus/images/collections/collection-48.jpg"

@@ -1,10 +1,11 @@
 import React from 'react'
-import image1 from '../components/brands/brand-01.png'
-import image2 from '../components/brands/brand-02.png'
-import image3 from '../components/brands/brand-03.png'
-import image4 from '../components/brands/brand-04.png'
-import image5 from '../components/brands/brand-05.png'
-import image6 from '../components/brands/brand-06.png'
+import image1 from '../brands/brandsimg/brand-01.png'
+import image2 from '../brands/brandsimg/brand-02.png'
+import image3 from '../brands/brandsimg/brand-03.png'
+import image4 from '../brands/brandsimg/brand-04.png'
+import image5 from '../brands/brandsimg/brand-05.png'
+import image6 from '../brands/brandsimg/brand-06.png'
+import '../brands/Brands.css'
 
 
 function Brands() {
