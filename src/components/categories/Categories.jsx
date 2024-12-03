@@ -37,21 +37,22 @@ const Categories = () => {
 
   return (
     <>
-      <h2 className="d-flex justify-content-center mt-5 fw-normal fs-1">
+    <div className="category-container">
+    <h2 className="d-flex justify-content-center mt-5 fw-normal fs-1 heading">
         Categories you might like
       </h2>
       <div
         ref={galleryRef}
         className="container gallary  mt-5"
       >
-        <div className="row" style={{ flexWrap: "nowrap", gap: "10px" }}>
+        <div className="row main-image" style={{ flexWrap: "nowrap", gap: "10px" }}>
           <div className="col-md-auto like">
-            <div className="card item">
-              <div className="image-container ">
+            <div className="card item ">
+              <div className="image-container dress">
                 <img
                   src="https://themesflat.co/html/ecomus/images/collections/collection-42.jpg"
                   alt="category1"
-                  className="w-100"
+                  className="w-100 "
                 />
               </div>
               <button
@@ -69,11 +70,11 @@ const Categories = () => {
 
           <div className="col-md-auto like">
             <div className="card item ">
-              <div className="image-container ">
+              <div className="image-container dress">
                 <img
                   src="https://themesflat.co/html/ecomus/images/collections/collection-43.jpg"
                   alt="category2"
-                  className="w-100"
+                  className="w-100 "
                 />
                 {leftArrow ? (
                   <i
@@ -93,7 +94,7 @@ const Categories = () => {
                 )}
               </div>
               <button
-                className="btn list rounded-pill fw-normal  shadow p-2 mb-5 bg-body-tertiary rounded w-50 "
+                className="btn  list rounded-pill fw-normal  shadow p-2 mb-5 bg-body-tertiary rounded w-50 "
               >
                 Sweatshirts{" "}
                 <i
@@ -106,7 +107,7 @@ const Categories = () => {
 
           <div className="col-md-auto like">
             <div className="card item">
-              <div className="image-container ">
+              <div className="image-container dress">
                 <img
                   src="https://themesflat.co/html/ecomus/images/collections/collection-44.jpg"
                   alt="category3"
@@ -128,7 +129,7 @@ const Categories = () => {
 
           <div className="col-md-auto like">
             <div className="card item">
-              <div className="image-container ">
+              <div className="image-container dress">
                 <img
                   src="https://themesflat.co/html/ecomus/images/collections/collection-45.jpg"
                   alt="category4"
@@ -166,7 +167,7 @@ const Categories = () => {
 
           <div className="col-md-auto like">
             <div className="card item">
-              <div className="image-container">
+              <div className="image-container dress">
                 <img
                   src="https://themesflat.co/html/ecomus/images/collections/collection-46.jpg"
                   alt="category5"
@@ -188,8 +189,8 @@ const Categories = () => {
         </div>
       </div>
 
-      <div className="container mt-5">
-        <div className="row row-cols-1 row-cols-md-2 g-5 justify-content-center">
+      <div className="container  mt-5">
+        <div className="row pick-container row-cols-1 row-cols-md-2 g-5 justify-content-center">
           <div className="col-auto pick" >
             <div className="card">
               <img
@@ -222,6 +223,8 @@ const Categories = () => {
           </div>
         </div>
       </div>
+    </div>
+     
     </>
   );
 };
