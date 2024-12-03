@@ -13,10 +13,10 @@ function ReadStorie() {
 
 
 <div className="text-content">
-<p className='header'>Redefining Fashion
+<p className='header1'>Redefining Fashion
 Excellence</p>
 <p>Here is your chance to upgrade your wardrobe with a variation of styles</p>
-<button className='readstory-button'>Read out stories</button>
+<button className='readstory-button1'>Read out stories</button>
 
 </div>
 

@@ -163,6 +163,14 @@ font-weight: 600;
     width: 100%;
     margin-left: 600px;
   }
+  .ecomus-header{
+    margin-top: 30px;
+    font-size: 70px;
+    width: 1500px;
+  }
+  .ecomus-header h1{
+    font-size: 90px;
+  }
 
   .ecomus-collections {
     width: 100%;
@@ -176,15 +184,31 @@ font-weight: 600;
 
 @media screen and (max-width: 480px) {
   .ecomus-container {
-    margin-left: 500px;
-  }
-
-  .ecomus-collections {
     width: 100%;
+    margin-left: 600px;
+  justify-content: center;
+  align-items: center;
   }
-
+.card{
+  width: 600px;
+  margin-left: 600px;
+}
+.ecomus-header{
+  margin-top: 30px;
+  font-size: 70px;
+  width: 1500px;
+}
+.ecomus-header h1{
+  font-size: 90px;
+}
   .cards-carousel {
     gap: 15px;
     flex-direction: column;
+  }
+  .cardcontent .cardpara1{
+    font-size: 50px;
+  }
+  .cardcontent .cardpara2{
+    font-size: 50px;
   }
 }

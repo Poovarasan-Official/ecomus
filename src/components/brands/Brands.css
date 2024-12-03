@@ -26,18 +26,26 @@
         margin-top: 600px;
 
         margin-left:550px;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
 
       }
     }
 
     @media screen and (max-width: 480px){
       .brand-container{
-        margin-left: 800px;
+        margin-left: 450px;
       }
       .brand-subcontainer{
         margin-top: 600px;
         margin-left:550px;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 50px;
+        margin-bottom: 50px;
+      }
+      .brandimgs{
+        width: 500px;
+        height: 150px;
       }
     }

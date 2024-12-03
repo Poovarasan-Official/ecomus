@@ -29,7 +29,7 @@
     width: 37px;
     height: 25px;
   }
-  .peopletalk-header{
+  .peopletalk-header3{
     font-size: 12px;
   }
   .peopletalk-des{
@@ -112,10 +112,19 @@
   @media screen and (max-width:480px){
     .peoplefeed-container{
       margin-left: 850px;
-      margin-bottom: 400px;
+      margin-bottom: 700px;
+    }
+    .peopletalk-header3{
+      font-size: 50px;
+    }
+    .peopletalk-des{
+      font-size: 30px;
     }
     .peoplefeed-subcontainer{
       flex-direction: column;    
-      gap: 80px;    
+      gap: 280px;    
+    }
+    .peoplefeed-textcontent .ptag1{
+      font-size: 30px;
     }
   }
