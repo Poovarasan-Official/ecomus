@@ -5,7 +5,7 @@ const CarouselPage = () => {
   return (
     <>
        
-  <div id="carouselExampleIndicators" class="carousel slide">
+  <div id="carouselExampleIndicators" className="carousel slide">
   <div className="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -13,8 +13,10 @@ const CarouselPage = () => {
   </div>
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src="https://themesflat.co/html/ecomus/images/slider/women-slideshow-1.jpg" className="d-block w-100" alt="..." />
-      <div className="carousel-caption text-start text-dark">
+      <div className="row">
+         <img src="https://themesflat.co/html/ecomus/images/slider/women-slideshow-1.jpg" className="d-block w-100" alt="..." />            
+        </div>
+        <div className=" carousel-caption text-start text-dark">
             <h2 className="fw-normal" style={{fontSize:"80px"}}>Elegance</h2>
             <p style={{fontSize:"20px"}}>From casual formal, we've got you covered</p>
             <button className="btn btn-dark p-3 rounded-pill mt-4">
@@ -25,7 +27,7 @@ const CarouselPage = () => {
               ></i>
             </button>
           </div>
-    </div>
+      </div>
     <div className="carousel-item ">
       <img src="https://themesflat.co/html/ecomus/images/slider/women-slideshow-2.jpg" className="d-block w-100" alt="..." />
       <div className="carousel-caption text-dark text-start">

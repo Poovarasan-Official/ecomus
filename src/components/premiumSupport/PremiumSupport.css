@@ -1,7 +1,7 @@
 
 /* ----------------Premium support------------- */
 
-.premium-container{
+ /* .premium-container{
     width: 1240px;
     height: 255.33px;
     padding: 80px 0px 0px;
@@ -37,9 +37,9 @@
   .premium-cards .premium-desr{
     font-size: 14px;
     
-    }
+    } 
   
-/*     
+     
 
     @media screen and (max-width: 1024px) {
       .premium-container {
@@ -55,9 +55,9 @@
         width: 48%;
         margin: 10px 1%;
       }
-    } */
+    } 
     
-    @media screen and (max-width: 768px) {
+     @media screen and (max-width: 768px) {
       .premium-container {
         margin-left: 800px;
       }
@@ -94,5 +94,5 @@
       }
     
       
-    }
-    
+    } */
+     

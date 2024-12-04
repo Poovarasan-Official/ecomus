@@ -1,5 +1,5 @@
 /* -------------------ecomus-favorites------------ */
-/* .ecomus-container{
+ /* .ecomus-container{
   width: 1240px;
   height: 742.09px;
   padding: 78px 0px 0px;
@@ -73,10 +73,10 @@ font-weight: 600;
 }
 .form-check-input{
   background-color: rgb(255, 111, 0)  ;
-} */
+} 
 
 /* -------------------ecomus-favorites------------ */
-.ecomus-container {
+/* .ecomus-container {
   width: 1240px;
   padding: 78px 0;
   display: flex;
@@ -137,13 +137,13 @@ font-weight: 600;
 .cardpara2 {
   font-size: 14px;
   font-weight: 600;
-}
+}  */
 
 /* -----------media query---------- */
 
 
 
-@media screen and (max-width: 900px) {
+ /* @media screen and (max-width: 900px) {
   .ecomus-container {
     width: 100%;
     margin-left: 800px;
@@ -211,4 +211,4 @@ font-weight: 600;
   .cardcontent .cardpara2{
     font-size: 50px;
   }
-}
+}  */

@@ -1,5 +1,5 @@
   /* ------------------brands---------------- */
-  .brand-container{
+   /* .brand-container{
     width: 1240px;
     height: 274.85;    
     padding: 100px 0px;
@@ -14,11 +14,11 @@
     width: 181.67px;
     height: 74.85px;
     
-    }
-    
+    } */
+     
 
     /* -----------------------media query-------------- */
-    @media screen and (max-width: 900px){
+     /* @media screen and (max-width: 900px){
       .brand-container{
         margin-left: 800px;
       }
@@ -48,4 +48,4 @@
         width: 500px;
         height: 150px;
       }
-    }
+    }  */
